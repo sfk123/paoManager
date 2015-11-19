@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shengping.paomanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.INTERNET" />
+<!-- 这个权限用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<!-- 这个权限用于访问GPS定位-->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<!-- 用于读取手机当前的状态-->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>  
+    <application
+        android:allowBackup="true"
+        android:name=".MyApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_Login"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity_ForgetPssword"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity_ForgetPwd_Reset"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity_SelectPhoto"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity_Main_Pusher"/>
+        <activity
+            android:name=".Activity_SelectLocation"/>
+        <activity
+            android:name=".Activity_Main_Business"/>
+        <activity
+            android:name=".Activity_AddType"/>
+        <activity
+            android:name=".Activity_Product_Manager"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity_AddProduct"/>
+        <activity
+            android:name=".Activity_EditProduct"/>
+        <activity
+            android:name=".Activity_Enchashment"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity_CardManager"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity_Refund"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity_Business_Balance"/>
+        <activity
+            android:name=".Activity_Orders_Day"/>
+         <activity
+            android:name=".Activity_Analyse"/>
+         <activity
+            android:name=".Activity_WebView"/>
+          <activity
+            android:name=".Activity_Business_Comment"/>
+            
+        <!-- 以下是百度地图相关 -->
+         <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+		 </service>
+		 <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="IUYR1P6h6RjVKBbirETUZ0c8" /> 
+    </application>
+
+</manifest>

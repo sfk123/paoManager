@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PaoManager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="manager_notice">1.银行卡开户人信息必须同之前申请填写商户姓名一致才能提现\n2.开户银行卡号必须准确无误，否则无法提现。\n3.银行卡仅支持储蓄卡，请不要填写信用卡\n4.绑定62开头，有银联标识的储蓄卡，提现更及时\n5.提现产生将扣除百分之一的第三方交易手续费\n6.银行卡提现星期六/日推迟到星期一
+        \n7.尽量选择使用支付宝账户提现快速到账</string>
+</resources>

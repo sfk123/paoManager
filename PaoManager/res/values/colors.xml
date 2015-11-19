@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_main">#f98703</color>
+    <color name="text_black">#333333</color>
+    <color name="text_gray">#606060</color>
+    <color name="text_holder">#e4e4e4</color>
+    <color name="activity_bg">#f0f0f0</color>
+    <color name="white">#ffffff</color>
+	<!-- 登陆页tab颜色 -->
+	<color name="login_select">#e5e5e5</color>
+	<color name="line_color">#c9c9c9</color>
+	<!-- 登陆界面按钮不可用颜色 -->
+	<color name="btn_unuse">#cfcfcf</color>
+	<color name="province_line_border">#C7C7C7</color>
+	<drawable name="popup_bg">#7a000000</drawable>
+	<drawable name="webview_progress">#f98703</drawable>
+</resources>
